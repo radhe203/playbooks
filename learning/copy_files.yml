@@ -1,0 +1,15 @@
+---
+
+- name: copying files
+  hosts: servers
+  
+  tasks:
+    - name: copy files on server
+      copy:
+        src: /home/ubuntu/index.html
+        dest: /home/ubuntu/
+        owner: ubuntu
+        mode: 0777
+        backup: true
+
+
