@@ -1,0 +1,17 @@
+---
+   
+- name: Dispalyin dates
+  hosts: servers
+  tasks:
+    - name: show date
+      command: date
+       
+    - name: show memory
+      command: free -h
+
+        
+
+
+
+
+
